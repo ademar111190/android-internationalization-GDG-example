@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "gdg.helloworld"
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
+        versionCode Integer.parseInt(ANDROID_BUILD_VERSION_CODE)
+        versionName ANDROID_BUILD_VERSION_NAME
+    }
+}
+
+dependencies {
+}
